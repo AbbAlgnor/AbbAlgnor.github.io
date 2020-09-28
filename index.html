@@ -1,5 +1,54 @@
 <html>
-  <body>
-    <h1>Algot</h1>
-  </body>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="icon.png" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <table cellspacing="0" class=result>
+            <tr>
+                <td id="previous"></td>
+            </tr>
+            <tr>
+                <td id="current"></td>
+            </tr>
+        </table>
+        <table cellspacing="0" class="numpad">
+            <tr>
+                <td id='7' class="number" onclick="onClick(this.id)">7</td>
+                <td id="8" class="number" onclick="onClick(this.id)">8</td>
+                <td id="9" class="number" onclick="onClick(this.id)">9</td>
+                <td id="÷" class="operator" onclick="onClick(this.id)">&div;</td>
+                <td id="DEL" class="ex-operator" onclick="onClick(this.id)">DEL</td>
+            </tr>
+            <tr>
+                <td id="4" class="number" onclick="onClick(this.id)">4</td>
+                <td id="5" class="number" onclick="onClick(this.id)">5</td>
+                <td id="6" class="number" onclick="onClick(this.id)">6</td>
+                <td id="*" class="operator" onclick="onClick(this.id)">&times;</td>
+                <td id="^" class="ex-operator" onclick="onClick(this.id)">^</td>
+            </tr>
+            <tr>
+                <td id="1" class="number" onclick="onClick(this.id)">1</td>
+                <td id="2" class="number" onclick="onClick(this.id)">2</td>
+                <td id="3" class="number" onclick="onClick(this.id)">3</td>
+                <td id="-" class="operator" onclick="onClick(this.id)">-</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="0" class="number" onclick="onClick(this.id)">0</td>
+                <td id="." class="number" onclick="onClick(this.id)">.</td>
+                <td id="NEGATIVE" class="number" onclick="onClick(this.id)">-</td>
+                <td id="+" class="operator" onclick="onClick(this.id)">+</td>
+                <td id="EQUALS" class="ex-operator" onclick="onClick(this.id)">=</td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>
